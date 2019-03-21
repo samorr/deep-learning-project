@@ -134,4 +134,6 @@ if __name__ == '__main__':
 
     acc = compute_accuracy(model, testloader)
 
+    save_model(model, 'model.pt')
+
     print('Accuracy of the network on the 10000 test images: %d %%' % acc)
